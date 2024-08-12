@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <title>SosCoin Kombat - loading</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="YXBwL">
 	<img src="loading/images/loading.gif" width="20px""><br>
-    <a class="bm8gb">SosCoin загружается...</a><br>
+    <a class="bm8gb">SosCoin ����� ����㧨���...</a><br>
     <img src="loading/images/sosok.png" width="200px""><br>
-    <a class="bm8gb">Тапайте все срочно!</a><br>
 	<a class="mb8gb" style="font-size:15px; color: rgba(255,255,255,0.6);">Butloyal Games</a>
   </div>
 </body>
-<script>setTimeout(() => { window.location.href="soscoin/index.html"; }, 2000);</script>
+<script>setTimeout(() => { 
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.location.href="soscoin/index.html"; 
+} else {
+    window.location.href="not-android/index.html"; 
+}
+}, 2000);</script>
 </html>
