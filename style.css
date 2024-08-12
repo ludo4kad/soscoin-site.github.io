@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "druk";
+    src: url('fonts/druk.ttf');
+}
+
+@font-face {
+    font-family: "yandex";
+    src: url('loading/fonts/yandex.ttf');
+}
+
+body {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background-color: #1c1c22;
+    font-family: "yandex";
+    display: flex;
+    height: 94vh;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+a.magaz {
+  margin-top: 15px;
+  background-color: #1468fa;
+  border-radius: 6px;
+  padding: 5px 9px;
+}
+#Y2xpY {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 28px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 10px;
+}
+div.YXBwL {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 15px;
+}
+h1 {
+    color: #e74c3c;
+}
+p.eWFuZ{
+  font-family: "druk";
+}
+h1.bm8gb{
+  margin: 0;
+}
