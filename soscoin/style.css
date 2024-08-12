@@ -7,7 +7,40 @@
     font-family: "yandex";
     src: url('fonts/yandex.ttf');
 }
-
+div.stats-view{
+  -webkit-box-shadow: 0px -7px 14px 0px rgba(0, 144, 255, 0.2);
+-moz-box-shadow: 0px -7px 14px 0px rgba(0, 144, 255, 0.2);
+box-shadow: 0px -7px 14px 0px rgba(0, 144, 255, 0.2);
+  display: flex;
+  min-width: 98%;
+  min-height: 5vh;
+  border-radius: 17px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 19px;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: stretch;
+}
+div.stat-item{
+  border-radius: 13px;
+  min-width: 48%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.17);
+}
+p.stat-key{
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  font-size: 18px;
+  font-family: "druk";
+}
+span.stat-value{
+  margin: 0;
+  padding: 0;
+  color: rgba(255,255,255,0.5);
+  font-size: 16px;
+  font-family: "yandex";
+}
 body {
     text-align: center;
     color: white;
@@ -20,6 +53,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+img.tap{
+  transition: transform 0.06s;
+}
+img.tap.animate {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 42px rgba(255, 255, 255, 0.1));
+}
+
 a.magaz {
   margin-top: 15px;
   background-color: #1468fa;

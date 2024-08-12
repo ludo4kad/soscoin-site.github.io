@@ -5,19 +5,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="YXBwL">
+  <div class="YXBwL" id="1" style="display:block;">
 	<img src="loading/images/loading.gif" width="20px""><br>
-    <a class="bm8gb">SosCoin загружается...</a><br>
+    <a class="bm8gb">SosCoin сейчас запустится...</a><br>
     <img src="loading/images/sosok.png" width="200px""><br>
 	<a class="mb8gb" style="font-size:15px; color: rgba(255,255,255,0.6);">Butloyal Games</a>
   </div>
+  <div class="YXBwL" id="2" style="display:none;">
+    <a class="bm8gb"                        >SosCoin не может загрузится...</a><br>
+	<a class="bm8gb" style="font-size:15px;">Дело в том что на ПК-Устройствах SosCoin</a><br>
+	<a class="bm8gb" style="font-size:15px;">не загружается в должном образе</a><br>
+    <img src="page/images/pc.svg" width="200px"><br>
+	<a class="mb8gb" style="font-size:15px; color: rgba(255,255,255,0.6);">Butloyal Games</a>
+  </div>
 </body>
-<script>setTimeout(() => { 
+<script>setTimeout(() => {
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    window.location.href="soscoin/index.html"; 
+    window.location.href="/";
 } else {
-    window.location.href="not-android/index.html"; 
+    document.getElementById('1').style.display = "none";
+	document.getElementById('2').style.display = "block";
 }
 }, 2000);</script>
 </html>
