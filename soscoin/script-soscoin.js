@@ -11,6 +11,6 @@ function incrementClicks() {
 }
 
 function updateTxt(){
-  document.getElementById("Y2xpY").textContent = allSos;
+  document.getElementById("Y2xpY").innerHTML = "<img src='images/coin.png' style='width:4vh' alt='coin'>"+allSos;
 }
 var timer = setInterval(updateTxt, 1);

@@ -1,6 +1,10 @@
-function showNotification(textTo, timeFor){
+function showNotification(textTo){
   var notifDiv = document.getElementById('notif');
   notifDiv.style.display = "block";
-  notifDiv.innerHTML = textTo;
-  setTimeout(() => {  notifDiv.style.display = "none"; }, timeFor);
+  notifDiv.innerHTML = textTo + "<br><button onclick='hideNotification()'>Закрыть</button>";
+}
+function hideNotification() {
+  var notifDiv = document.getElementById('notif');
+  notifDiv.style.display = "none";
+  notifDiv.innerHTML = '';
 }

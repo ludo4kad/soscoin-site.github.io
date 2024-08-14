@@ -1,0 +1,9 @@
+<a id="text">Error</a>
+<script type="text/javascript">
+  const queryString = window.location.search
+console.log(queryString)
+
+const urlParams = new URLSearchParams(queryString)
+
+document.getElementById('text').innerHTML = urlParams.get('err')
+</script>

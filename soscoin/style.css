@@ -68,7 +68,8 @@ a.magaz {
   padding: 5px 9px;
 }
 #Y2xpY {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 5px 10px;
     font-size: 28px;
     background-color: rgba(255,255,255,0.1);
