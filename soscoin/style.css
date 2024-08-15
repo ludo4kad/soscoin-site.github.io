@@ -11,11 +11,12 @@ div.stats-view{
   -webkit-box-shadow: 0px -7px 14px 0px rgba(0, 144, 255, 0.2);
 -moz-box-shadow: 0px -7px 14px 0px rgba(0, 144, 255, 0.2);
 box-shadow: 0px -7px 14px 0px rgba(0, 144, 255, 0.2);
+filter: drop-shadow(0px 5px 10px #000000);
   display: flex;
   min-width: 98%;
   min-height: 5vh;
   border-radius: 17px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.103);
   margin-bottom: 19px;
   padding: 5px;
   justify-content: space-around;
@@ -42,10 +43,12 @@ span.stat-value{
   font-family: "yandex";
 }
 body {
+  user-select: none;
     text-align: center;
     color: white;
     font-size: 24px;
-    background-color: #1c1c22;
+    background: rgb(24,1,12);
+background: linear-gradient(180deg, rgb(1, 36, 24) 0%, rgb(29, 24, 53) 100%);
     font-family: "yandex";
     display: flex;
     height: 94vh;
@@ -53,7 +56,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 img.tap{
+  background: transparent;
+  cursor: pointer;
   transition: transform 0.06s;
 }
 img.tap.animate {
@@ -61,24 +67,30 @@ img.tap.animate {
   filter: drop-shadow(0px 0px 42px rgba(255, 255, 255, 0.1));
 }
 
-a.magaz {
+a.reactor {
+  font-size: 20px;
+  cursor: pointer;
   margin-top: 15px;
-  background-color: #1468fa;
+  background-color: #1753bb;
   border-radius: 6px;
   padding: 5px 9px;
+  filter: drop-shadow(0px 0px 22px #000000);
 }
 #Y2xpY {
     display: inline-flex;
     align-items: center;
     padding: 5px 10px;
     font-size: 28px;
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 div.YXBwL {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
+  filter: drop-shadow(0px 20px 34px rgba(0, 110, 255, 0.765));
+  border:solid 3px #ffffff79;
+  background: rgb(38,8,42);
+background: linear-gradient(180deg, rgba(31, 104, 78, 0.562) 0%, rgb(13, 30, 68) 100%);
+  border-radius: 35px;
   padding: 15px;
 }
 h1 {

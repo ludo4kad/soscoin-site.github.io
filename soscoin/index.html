@@ -15,14 +15,13 @@
 </head>
 <body>
   <div class="YXBwL">
-    <a class="bm8gb">Версия: 0.2 BETA-WEB</a><br>
-    <a class="bm8gb" style="font-size: 14px;">Пользователь: <span id="user">0</span></a>
+    <a class="bm8gb">Версия: 1.0 PR-WEB</a><br>
     <p class="eWFuZ bm8gb"><span id="Y2xpY"><img src="images/coin.png" alt="coin">0</span></p>
     <div class="stats-view">
-      <div class="stat-item" onclick="showNotification('Пасхалка!<br>Да, тут будут уровни')">
+      <div class="stat-item">
         <p class="stat-key">Уровень</p>
         <stats-line></stats-line>
-        <span id="clicksPerSec" class="stat-value">0</span>
+        <span id="level" class="stat-value">0</span>
       </div>
       <div class="stat-item" onclick="showNotification('Пасхалка!<br>Да, тут будут клики в секунду')">
         <p class="stat-key">Клики/сек</p>
@@ -30,8 +29,24 @@
         <span id="clicksPerSec" class="stat-value">Недоступно</span>
       </div>
     </div>
+    <a class="reactor" id="reactor" onclick="newLevel()">Прокаsчать уровень</a><br><br>
     <img src="skins/norm.png" class="tap" width="300px" onclick="incrementClicks()">
   </div>
   <div id="notif" style="display: none; position: fixed;top: 20px;border-radius: 24px;background-color: #282128;padding: 15px 35px;border: solid #fff;"></div>
+<script>
+let tg = window.Telegram.WebApp;
+  tg.ready();
+  tg.expand();
+  
+  function updateTxt(){
+  try {
+  const namee3e = tg.initDataUnSafe.user.first_name + " " + tg.initDataUnSafe.user.last_name;
+    document.getElementById("user").textContent = namee3e;
+  } catch (err) {}
+    
+  }
+  
+  var timer = setInterval(updateTxt, 1);
+  </script>
 </body>
 </html>
